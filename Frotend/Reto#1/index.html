@@ -6,180 +6,413 @@
 	<title>Blog HackSpace</title>
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 </head>
 <body class="grey lighten-3">
-	<header class="container">
-		<h1>Blog HackSpace</h1>
+	<header class="hide-on-small-only hide-on-med-only">		
+		<div class="section blue darken-3">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 m12 l12">
+        				<h1 class="center-align">Blog HackSpace UTP</h1>
+      				</div>
+				</div>
+			</div>
+		</div>
 	</header>
-	<nav class="blue darken-3">		
-	</nav>
-	<main class="container">
-		<div class="row">
-			<!-- Primera Publicacion -->
-			<div class="col s12 m12 l6">
-				<!-- Seccion de Articulos de Publicacion -->
-				<article class="card">
-					<!-- Seccion de Contenido -->
-					<header class="card-image">
-						<img src="image/publicacion/publicacion01.jpg" alt="">
-						<h4 class="card-title">4 recomendaciones para startups de educación online</h4>
-						<!-- <time>Lunes 23 de Mayo del 2016</time> -->
-					</header>
-					<p class="card-content publicacion-text">
-						Antes de iniciar con tu startup debes documentarte muy bien. Aunque suene chistoso y obvio, son muchos los casos en los que nos aventuramos a iniciar nuestra startup de formación online sin leer o conocer absolutamente nada de educación, a pesar de que esta es una de las ramas más complejas del conocimiento actual. Un buen programador no es garantía para que un proyecto de productos o servicios de formación tenga éxito si este no lee o se apoya de un experto en procesos de educación.
-					</p>
-					<!-- Seccion de Autor -->
-					<footer class="page-footer blue darken-1">
-						<div class="footer-copyright">
-							<div class="container">
-								<div class="row">
-									<div class="col s6 m6 l6">
-										<i class="material-icons dp48">perm_identity</i><span>@JMitac</span>
-									</div>
-									<div class="col s6 m6 l6">
-										<i class="material-icons dp48">turned_in_not</i>
-										<span>mayo 24 2016</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</footer>
-					<div class="container">
-						<span class="left-align">2 comentarios</span>
-					</div>
-					<!-- Seccion Comentarios -->
-					<div class="collection">
-						<article class="collection-item avatar">				
-							<time>
-								<small>Martes 24 de Mayo del 2016</small>
-							</time>
-							<img src="image/Icon-user.png" alt="" class="circle">
-							<h6>
-								<strong>Luis Marco</strong>	
-							</h6>
-							<i>Excelente Post !!! =D</i>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</article>
-						<article class="collection-item avatar">
-							<time>
-								<small>Martes 24 de Mayo del 2016</small>
-							</time>
-							<img src="image/Icon-user.png" alt="" class="circle">
-							<h6>
-								<strong>Miguel Fernandez</strong>
-								
-							</h6>
-							<i>Buen Post !!</i>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</article>
-					</div>
-					<!-- Agregar Comentario -->
-					<form class="col s12">
-					    <div class="row">
-						    <div class="input-field col s6">
-						        <i class="material-icons prefix">account_circle</i>
-						        <input id="icon_prefix" type="text" class="validate">
-						        <label for="icon_prefix">Nombre Completo</label>
-						    </div>
-						    <div class="input-field col s6">
-						    	<i class="material-icons prefix">mode_edit</i>
-						        <input id="icon_prefix2" type="text" class="validate">
-						        <label for="icon_prefix2">Comentario</label>
-						    </div>
-					    </div>
-					</form>
-					<center>
-						<input class="waves-effect waves-light btn" type="button" value="comentar"/>
-					</center>
-					<br>
-				</article>
+
+	<nav class="hide-on-large-only blue darken-3">
+	    <div class="nav-wrapper">
+	      <a href="#!" class="brand-logo">Blog HackSpace UTP</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="sass.html">Home</a></li>
+	        <li><a href="badges.html">Blog</a></li>
+	        <li><a href="collapsible.html">About</a></li>
+	        <li><a href="mobile.html">Contact</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="sass.html">Home</a></li>
+	        <li><a href="badges.html">Blog</a></li>
+	        <li><a href="collapsible.html">About</a></li>
+	        <li><a href="mobile.html">Contact</a></li>
+	      </ul>
+	    </div>
+  	</nav>
+
+	<div class="row">
+		<div class="col s12 m12 l2 hide-on-small-only hide-on-med-only">
+			<div class="card">
+				<div class="card-content">
+					<a class="card-title" href="#">
+						<img class="responsive-img" src="image/hs-utp-logo.png" alt="">
+					</a>
+				</div>
+				<div class="divider"></div>
+				<div class="card-content">
+					<a class="card-title" href="#">Home</a>
+				</div>
+				<div class="divider"></div>
+				<div class="card-content">
+					<a class="card-title" href="#">Blog</a>
+				</div>
+				<div class="divider"></div>
+				<div class="card-content">
+					<a class="card-title" href="#">About</a>
+				</div>
+				<div class="divider"></div>
+				<div class="card-content">
+					<a class="card-title" href="#">Contact</a>
+				</div>
 			</div>
-			<!-- Segunda Publicacion -->
-			<div class="col s12 m12 l6">
-				<!-- Seccion de Articulos de Publicacion -->
-				<article class="card">
-					<!-- Seccion de Contenido -->
-					<header class="card-image">
-						<img src="image/publicacion/publicacion02.jpg" alt="">
-						<h4 class="card-title">Crea tu blog con ReactJS, GitHub y Surge</h4>
-						<!-- <time>Lunes 23 de Mayo del 2016</time> -->
-					</header>
-					<p class="card-content publicacion-text">
-						¿Se podrá crear un blog de nuestra propia autoría sin usar servicios ya construidos como Jekyll o WordPress? Es lo que me preguntaba antes de empezar este proceso, porque muchas veces estos servicios son complicados de configurar y en algunos casos no te brindan la flexibilidad para todo lo que necesitas. Por esto me vino la idea de crear un blog usando ReactJS para construir una aplicación web que se encargue de cargar y mostrar los posts ya escritos, como te voy a enseñar en este post.
-					</p>
-					<!-- Seccion de Autor -->
-					<footer class="page-footer blue darken-1">
-						<div class="footer-copyright">
-							<div class="container">
-								<div class="row">
-									<div class="col s6 m6 l6">
-										<i class="material-icons dp48">perm_identity</i><span>@JMitac</span>
+			 <!-- <div class="collection">
+    			<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+    			<a href="#!" class="collection-item">Alan<span class="new badge">4</span></a>
+    			<a href="#!" class="collection-item">Alan</a>
+    			<a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
+  			</div> -->
+		</div>
+		<div class="col s12 m12 l10">
+			<!-- Cuerpo Principal -->
+			<main>
+				<div class="container">
+					<div class="row">
+						<!-- Primera Publicacion -->
+						<div class="col s12 m12 l6">
+							<!-- Seccion de Articulos de Publicacion -->
+							<article class="card">
+								<!-- Seccion de Contenido -->
+								<header class="card-image">
+									<img src="image/publicacion/publicacion01.jpg" alt="">
+									<h4 class="card-title">4 recomendaciones para startups de educación online</h4>
+									<!-- <time>Lunes 23 de Mayo del 2016</time> -->
+								</header>
+								<p class="card-content publicacion-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error numquam doloremque blanditiis consequatur! Mollitia vero dicta error quos odit explicabo, soluta tempore quidem dolor. Reiciendis quasi dolores explicabo perspiciatis quisquam.
+								</p>
+								<!-- Seccion de Autor -->
+								<footer class="page-footer blue darken-1">
+									<div class="footer-copyright">
+										<div class="container">
+											<div class="row">
+												<div class="col s6 m6 l6">
+													<i class="material-icons dp48">perm_identity</i><span>@JMitac</span>
+												</div>
+												<div class="col s6 m6 l6">
+													<i class="material-icons dp48">turned_in_not</i>
+													<span>mayo 24 2016</span>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="col s6 m6 l6">
-										<i class="material-icons dp48">turned_in_not</i>
-										<span>mayo 24 2016</span>
-									</div>
+								</footer>
+								<div class="container">
+									<span class="left-align">2 comentarios</span>
 								</div>
-							</div>
+								<!-- Seccion Comentarios -->
+								<div class="collection">
+									<article class="collection-item avatar">				
+										<time>
+											<small>Martes 24 de Mayo del 2016</small>
+										</time>
+										<img src="image/Icon-user.png" alt="" class="circle">
+										<h6>
+											<strong>Luis Marco</strong>	
+										</h6>
+										<i>Excelente Post !!! =D</i>
+										<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+									</article>
+									<article class="collection-item avatar">
+										<time>
+											<small>Martes 24 de Mayo del 2016</small>
+										</time>
+										<img src="image/Icon-user.png" alt="" class="circle">
+										<h6>
+											<strong>Miguel Fernandez</strong>
+											
+										</h6>
+										<i>Buen Post !!</i>
+										<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+									</article>
+								</div>
+								<!-- Agregar Comentario -->
+								<form class="col s12">
+								    <div class="row">
+									    <div class="input-field col s6">
+									        <i class="material-icons prefix">account_circle</i>
+									        <input id="icon_prefix" type="text" class="validate">
+									        <label for="icon_prefix">Nombre Completo</label>
+									    </div>
+									    <div class="input-field col s6">
+									    	<i class="material-icons prefix">mode_edit</i>
+									        <input id="icon_prefix2" type="text" class="validate">
+									        <label for="icon_prefix2">Comentario</label>
+									    </div>
+								    </div>
+								</form>
+								<center>
+									<input class="waves-effect waves-light btn" type="button" value="comentar"/>
+								</center>
+								<br>
+							</article>
 						</div>
-					</footer>
-					<div class="container">
-						<span class="left-align">2 comentarios</span>
+						<!-- Fin de Publicacion -->
+
+						<!-- Segunda Publicacion -->
+						<div class="col s12 m12 l6">
+							<!-- Seccion de Articulos de Publicacion -->
+							<article class="card">
+								<!-- Seccion de Contenido -->
+								<header class="card-image">
+									<img src="image/publicacion/publicacion02.jpg" alt="">
+									<h4 class="card-title">Crea tu blog con ReactJS, GitHub y Surge</h4>
+									<!-- <time>Lunes 23 de Mayo del 2016</time> -->
+								</header>
+								<p class="card-content publicacion-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit quibusdam ipsum, odit ipsam, dolorum enim praesentium inventore nesciunt magnam tempora blanditiis accusamus architecto dolor nobis explicabo delectus aspernatur natus!
+								</p>
+								<!-- Seccion de Autor -->
+								<footer class="page-footer blue darken-1">
+									<div class="footer-copyright">
+										<div class="container">
+											<div class="row">
+												<div class="col s6 m6 l6">
+													<i class="material-icons dp48">perm_identity</i><span>@JMitac</span>
+												</div>
+												<div class="col s6 m6 l6">
+													<i class="material-icons dp48">turned_in_not</i>
+													<span>mayo 24 2016</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</footer>
+								<div class="container">
+									<span class="left-align">2 comentarios</span>
+								</div>
+								<!-- Seccion Comentarios -->
+								<div class="collection">
+									<article class="collection-item avatar">				
+										<time>
+											<small>Martes 24 de Mayo del 2016</small>
+										</time>
+										<img src="image/Icon-user.png" alt="" class="circle">
+										<h6>
+											<strong>Luis Marco</strong>	
+										</h6>
+										<i>Excelente Post !!! =D</i>
+										<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+									</article>
+									<article class="collection-item avatar">
+										<time>
+											<small>Martes 24 de Mayo del 2016</small>
+										</time>
+										<img src="image/Icon-user.png" alt="" class="circle">
+										<h6>
+											<strong>Miguel Fernandez</strong>
+											
+										</h6>
+										<i>Buen Post !!</i>
+										<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+									</article>
+								</div>
+								<!-- Agregar Comentario -->
+								<form class="col s12">
+								    <div class="row">
+									    <div class="input-field col s6">
+									        <i class="material-icons prefix">account_circle</i>
+									        <input id="icon_prefix" type="text" class="validate">
+									        <label for="icon_prefix">Nombre Completo</label>
+									    </div>
+									    <div class="input-field col s6">
+									    	<i class="material-icons prefix">mode_edit</i>
+									        <input id="icon_prefix2" type="text" class="validate">
+									        <label for="icon_prefix2">Comentario</label>
+									    </div>
+								    </div>
+								</form>
+								<center>
+									<input class="waves-effect waves-light btn" type="button" value="comentar"/>
+								</center>
+								<br>
+							</article>
+						</div>
+						<!-- Fin de Publicacion -->
+
+						<!-- Tercera Publicacion -->
+						<div class="col s12 m12 l6">
+							<!-- Seccion de Articulos de Publicacion -->
+							<article class="card">
+								<!-- Seccion de Contenido -->
+								<header class="card-image">
+									<img src="image/publicacion/publicacion03.jpg" alt="">
+									<h4 class="card-title">Curso de Git y Github</h4>
+									<!-- <time>Lunes 23 de Mayo del 2016</time> -->
+								</header>
+								<p class="card-content publicacion-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure deserunt exercitationem adipisci minus, perspiciatis quas doloremque officia quae blanditiis, cum, vero velit tenetur iusto ex saepe consectetur tempora, voluptate cupiditate!
+								</p>
+								<!-- Seccion de Autor -->
+								<footer class="page-footer blue darken-1">
+									<div class="footer-copyright">
+										<div class="container">
+											<div class="row">
+												<div class="col s6 m6 l6">
+													<i class="material-icons dp48">perm_identity</i><span>@JMitac</span>
+												</div>
+												<div class="col s6 m6 l6">
+													<i class="material-icons dp48">turned_in_not</i>
+													<span>mayo 24 2016</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</footer>
+								<div class="container">
+									<span class="left-align">2 comentarios</span>
+								</div>
+								<!-- Seccion Comentarios -->
+								<div class="collection">
+									<article class="collection-item avatar">				
+										<time>
+											<small>Martes 24 de Mayo del 2016</small>
+										</time>
+										<img src="image/Icon-user.png" alt="" class="circle">
+										<h6>
+											<strong>Luis Marco</strong>	
+										</h6>
+										<i>Excelente Post !!! =D</i>
+										<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+									</article>
+									<article class="collection-item avatar">
+										<time>
+											<small>Martes 24 de Mayo del 2016</small>
+										</time>
+										<img src="image/Icon-user.png" alt="" class="circle">
+										<h6>
+											<strong>Miguel Fernandez</strong>
+											
+										</h6>
+										<i>Buen Post !!</i>
+										<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+									</article>
+								</div>
+								<!-- Agregar Comentario -->
+								<form class="col s12">
+								    <div class="row">
+									    <div class="input-field col s6">
+									        <i class="material-icons prefix">account_circle</i>
+									        <input id="icon_prefix" type="text" class="validate">
+									        <label for="icon_prefix">Nombre Completo</label>
+									    </div>
+									    <div class="input-field col s6">
+									    	<i class="material-icons prefix">mode_edit</i>
+									        <input id="icon_prefix2" type="text" class="validate">
+									        <label for="icon_prefix2">Comentario</label>
+									    </div>
+								    </div>
+								</form>
+								<center>
+									<input class="waves-effect waves-light btn" type="button" value="comentar"/>
+								</center>
+								<br>
+							</article>
+						</div>
+						<!-- Fin de Publicacion -->
+
+						<!-- Cuarta Publicacion -->
+						<div class="col s12 m12 l6">
+							<!-- Seccion de Articulos de Publicacion -->
+							<article class="card">
+								<!-- Seccion de Contenido -->
+								<header class="card-image">
+									<img src="image/publicacion/publicacion04.jpg" alt="">
+									<h4 class="card-title">Lo nuevo en Android Studio 2.0</h4>
+									<!-- <time>Lunes 23 de Mayo del 2016</time> -->
+								</header>
+								<p class="card-content publicacion-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas earum quidem sit explicabo. Aperiam distinctio doloremque facilis, nostrum, asperiores sequi quasi voluptatum quia temporibus consequuntur, quaerat excepturi eaque et at?
+								</p>
+								<!-- Seccion de Autor -->
+								<footer class="page-footer blue darken-1">
+									<div class="footer-copyright">
+										<div class="container">
+											<div class="row">
+												<div class="col s6 m6 l6">
+													<i class="material-icons dp48">perm_identity</i><span>@JMitac</span>
+												</div>
+												<div class="col s6 m6 l6">
+													<i class="material-icons dp48">turned_in_not</i>
+													<span>mayo 24 2016</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</footer>
+								<div class="container">
+									<span class="left-align">2 comentarios</span>
+								</div>
+								<!-- Seccion Comentarios -->
+								<div class="collection">
+									<article class="collection-item avatar">				
+										<time>
+											<small>Martes 24 de Mayo del 2016</small>
+										</time>
+										<img src="image/Icon-user.png" alt="" class="circle">
+										<h6>
+											<strong>Luis Marco</strong>	
+										</h6>
+										<i>Excelente Post !!! =D</i>
+										<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+									</article>
+									<article class="collection-item avatar">
+										<time>
+											<small>Martes 24 de Mayo del 2016</small>
+										</time>
+										<img src="image/Icon-user.png" alt="" class="circle">
+										<h6>
+											<strong>Miguel Fernandez</strong>
+											
+										</h6>
+										<i>Buen Post !!</i>
+										<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+									</article>
+								</div>
+								<!-- Agregar Comentario -->
+								<form class="col s12">
+								    <div class="row">
+									    <div class="input-field col s6">
+									        <i class="material-icons prefix">account_circle</i>
+									        <input id="icon_prefix" type="text" class="validate">
+									        <label for="icon_prefix">Nombre Completo</label>
+									    </div>
+									    <div class="input-field col s6">
+									    	<i class="material-icons prefix">mode_edit</i>
+									        <input id="icon_prefix2" type="text" class="validate">
+									        <label for="icon_prefix2">Comentario</label>
+									    </div>
+								    </div>
+								</form>
+								<center>
+									<input class="waves-effect waves-light btn" type="button" value="comentar"/>
+								</center>
+								<br>
+							</article>
+						</div>
+						<!-- Fin de Publicacion -->
 					</div>
-					<!-- Seccion Comentarios -->
-					<div class="collection">
-						<article class="collection-item avatar">				
-							<time>
-								<small>Martes 24 de Mayo del 2016</small>
-							</time>
-							<img src="image/Icon-user.png" alt="" class="circle">
-							<h6>
-								<strong>Luis Marco</strong>	
-							</h6>
-							<i>Excelente Post !!! =D</i>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</article>
-						<article class="collection-item avatar">
-							<time>
-								<small>Martes 24 de Mayo del 2016</small>
-							</time>
-							<img src="image/Icon-user.png" alt="" class="circle">
-							<h6>
-								<strong>Miguel Fernandez</strong>
-								
-							</h6>
-							<i>Buen Post !!</i>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</article>
-					</div>
-					<!-- Agregar Comentario -->
-					<form class="col s12">
-					    <div class="row">
-						    <div class="input-field col s6">
-						        <i class="material-icons prefix">account_circle</i>
-						        <input id="icon_prefix" type="text" class="validate">
-						        <label for="icon_prefix">Nombre Completo</label>
-						    </div>
-						    <div class="input-field col s6">
-						    	<i class="material-icons prefix">mode_edit</i>
-						        <input id="icon_prefix2" type="text" class="validate">
-						        <label for="icon_prefix2">Comentario</label>
-						    </div>
-					    </div>
-					</form>
-					<center>
-						<input class="waves-effect waves-light btn" type="button" value="comentar"/>
-					</center>
-					<br>
-				</article>
-			</div>
+				</div>
+			</main>	
 			
 		</div>
-		
-	</main>
+	</div>
+	
+
+	
+	<!-- Fin Cuerpo Principal -->
 	<footer class="page-footer blue darken-3">
+		<div class="container"></div>
         <div class="footer-copyright">
     	    <div class="container">
             © 2016 Copyright Text
@@ -187,6 +420,7 @@
             </div>
         </div>
     </footer>
+    <div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
     	$(".button-collapse").sideNav();
